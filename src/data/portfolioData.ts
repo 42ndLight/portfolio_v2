@@ -591,5 +591,6 @@ export const ENGINEER_PROFILE: EngineerProfile = {
     blog: 'https://blog.42ndlight.africa',
     email: 'kennedy@42ndlight.africa'
   },
-  pgpKey: '42F9 8B21 A0C4 513E E790'
+  pgpKey: '42F9 8B21 A0C4 513E E790',
+  avatarUrl: '/assets/aistudio/Gemini_Generated_Image_omio7fomio7fomio_48f2e14a.jpeg'
 };

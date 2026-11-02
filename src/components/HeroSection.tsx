@@ -176,17 +176,43 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               borderColor: theme.border
             }}
           >
-            {/* Top Stat */}
+            {/* Top Stat with Avatar */}
             <div className="flex items-center justify-between mb-6">
-              <div>
-                <span className="text-xs font-mono text-slate-500 uppercase tracking-wider block mb-1">
-                  CONSULTANT PROFILE
-                </span>
-                <h3 className="text-xl font-bold text-white">Kennedy Kinyua</h3>
+              <div className="flex items-center gap-3.5">
+                <button
+                  onClick={onOpenProfile}
+                  className="relative group cursor-pointer"
+                  title="View Kennedy's Profile Dossier"
+                >
+                  <div
+                    className="w-14 h-14 rounded-2xl overflow-hidden border-2 shadow-md transition-transform group-hover:scale-105"
+                    style={{ borderColor: theme.primary }}
+                  >
+                    <img
+                      src="/assets/aistudio/Gemini_Generated_Image_omio7fomio7fomio_48f2e14a.jpeg"
+                      alt="Kennedy Kinyua"
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <span
+                    className="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full border-2 border-black"
+                    style={{ backgroundColor: theme.primary }}
+                    title="Available for Advisory"
+                  />
+                </button>
+                <div>
+                  <span className="text-[11px] font-mono text-slate-500 uppercase tracking-wider block mb-0.5">
+                    CONSULTANT PROFILE
+                  </span>
+                  <h3 className="text-xl font-bold text-white">Kennedy Kinyua</h3>
+                  <div className="text-xs font-mono" style={{ color: theme.primary }}>
+                    Staff Systems Architect
+                  </div>
+                </div>
               </div>
               <button
                 onClick={onOpenProfile}
-                className="px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer"
+                className="px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer hover:bg-white/5"
                 style={{
                   backgroundColor: theme.badgeBg,
                   borderColor: theme.border,

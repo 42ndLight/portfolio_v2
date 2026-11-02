@@ -118,4 +118,5 @@ export interface EngineerProfile {
     email: string;
   };
   pgpKey: string;
+  avatarUrl: string;
 }

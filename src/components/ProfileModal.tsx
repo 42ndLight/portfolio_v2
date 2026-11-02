@@ -119,10 +119,9 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
                 style={{ borderColor: theme.primary }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+                  src={profile.avatarUrl}
                   alt="Kennedy Kinyua portrait"
-                  className="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500"
-                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-all duration-500"
                 />
               </div>
               <div

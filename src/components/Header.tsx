@@ -284,11 +284,23 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Profile trigger */}
             <button
               onClick={onOpenProfile}
-              className="p-2 rounded-xl border text-slate-300 hover:text-white transition-all cursor-pointer bg-black/40"
+              className="p-1.5 rounded-xl border text-slate-300 hover:text-white transition-all cursor-pointer bg-black/40 flex items-center gap-2 group"
               style={{ borderColor: theme.border }}
               title="Architect Profile (Kennedy Kinyua)"
             >
-              <User className="w-4 h-4" />
+              <div
+                className="w-6 h-6 rounded-lg overflow-hidden border transition-transform group-hover:scale-105"
+                style={{ borderColor: theme.primary }}
+              >
+                <img
+                  src="/assets/aistudio/Gemini_Generated_Image_omio7fomio7fomio_48f2e14a.jpeg"
+                  alt="Kennedy Kinyua"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <span className="font-mono text-[11px] pr-1 hidden xl:inline text-slate-300">
+                Kennedy K.
+              </span>
             </button>
 
             {/* Primary CTA Button */}
@@ -389,9 +401,18 @@ export const Header: React.FC<HeaderProps> = ({
                   onOpenProfile();
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center gap-2 py-2.5 px-3 rounded-xl text-xs font-mono text-slate-300 bg-white/[0.03]"
+                className="w-full flex items-center gap-2.5 py-2.5 px-3 rounded-xl text-xs font-mono text-slate-300 bg-white/[0.03]"
               >
-                <User className="w-4 h-4" />
+                <div
+                  className="w-6 h-6 rounded-lg overflow-hidden border shrink-0"
+                  style={{ borderColor: theme.primary }}
+                >
+                  <img
+                    src="/assets/aistudio/Gemini_Generated_Image_omio7fomio7fomio_48f2e14a.jpeg"
+                    alt="Kennedy Kinyua"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
                 <span>Architect Profile (Kennedy Kinyua)</span>
               </button>
               <button
